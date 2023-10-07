@@ -1,13 +1,10 @@
 <?php
 
-class Suma {
+class Multiplicacion {
 	private $valor1;
 	private $valor2;
 	private $resultado;
-	
-
-	
-
+    
 	/**
 	 * Get the value of valor1
 	 */
@@ -62,13 +59,13 @@ class Suma {
 		return $this;
 	}
 
-	//Crear función Suma
-	
-	function funcionBoton1($cargar1)
-	{
-	$cargar1->setResultado($_POST['numero1']+$_POST['numero2']);
-	echo $_POST['numero1'].' + '.$_POST['numero2'].' = '.$cargar1->getResultado().'<br>';
-	}
+    //Creación función multiplicación
 
+    function funcionBoton3($cargar3)
+	{
+        $cargar3->setResultado($_POST['numero1']*$_POST['numero2']);
+	    echo $_POST['numero1'].' x '.$_POST['numero2'].' = '.$cargar3->getResultado().'<br>';
+    }
 }
+
 ?>
